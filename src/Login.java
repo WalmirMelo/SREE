@@ -22,7 +22,6 @@ public class Login extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-        java.awt.GridBagConstraints gridBagConstraints;
         bindingGroup = new org.jdesktop.beansbinding.BindingGroup();
 
         LogEntrar = new javax.swing.JToggleButton();
@@ -38,123 +37,62 @@ public class Login extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        getContentPane().setLayout(new java.awt.GridBagLayout());
+        getContentPane().setLayout(null);
 
         LogEntrar.setFont(new java.awt.Font("Segoe Print", 1, 14)); // NOI18N
-        LogEntrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botoes_Site_5745_Knob_Valid_Green.png"))); // NOI18N
         LogEntrar.setText("Entrar");
         LogEntrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LogEntrarActionPerformed(evt);
             }
         });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 6;
-        gridBagConstraints.gridwidth = 8;
-        gridBagConstraints.ipadx = 1;
-        gridBagConstraints.ipady = -1;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(14, 100, 0, 0);
-        getContentPane().add(LogEntrar, gridBagConstraints);
+        getContentPane().add(LogEntrar);
+        LogEntrar.setBounds(160, 180, 82, 34);
 
         LogCancelar.setFont(new java.awt.Font("Segoe Print", 1, 14)); // NOI18N
-        LogCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Botoes_Site_5750_Knob_Cancel.png"))); // NOI18N
         LogCancelar.setText("Cancelar");
         LogCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LogCancelarActionPerformed(evt);
             }
         });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 15;
-        gridBagConstraints.gridy = 6;
-        gridBagConstraints.gridwidth = 10;
-        gridBagConstraints.ipadx = 3;
-        gridBagConstraints.ipady = -1;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(14, 10, 0, 0);
-        getContentPane().add(LogCancelar, gridBagConstraints);
+        getContentPane().add(LogCancelar);
+        LogCancelar.setBounds(240, 180, 96, 34);
 
         LogCampLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LogCampLoginActionPerformed(evt);
             }
         });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 7;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.gridwidth = 9;
-        gridBagConstraints.ipadx = 124;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(4, 7, 0, 0);
-        getContentPane().add(LogCampLogin, gridBagConstraints);
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 7;
-        gridBagConstraints.gridy = 3;
-        gridBagConstraints.gridwidth = 9;
-        gridBagConstraints.ipadx = 124;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(7, 7, 0, 0);
-        getContentPane().add(LogCampPass, gridBagConstraints);
+        getContentPane().add(LogCampLogin);
+        LogCampLogin.setBounds(210, 110, 130, 20);
+        getContentPane().add(LogCampPass);
+        LogCampPass.setBounds(200, 140, 130, 20);
 
         LogLogin.setFont(new java.awt.Font("Segoe Print", 1, 18)); // NOI18N
         LogLogin.setText("Login:");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 3;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridwidth = 4;
-        gridBagConstraints.gridheight = 3;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(100, 6, 0, 0);
-        getContentPane().add(LogLogin, gridBagConstraints);
+        getContentPane().add(LogLogin);
+        LogLogin.setBounds(140, 100, 53, 33);
 
         LogSenha.setFont(new java.awt.Font("Segoe Print", 1, 18)); // NOI18N
         LogSenha.setText("Senha:");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 3;
-        gridBagConstraints.gridwidth = 3;
-        gridBagConstraints.gridheight = 2;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(1, 16, 0, 0);
-        getContentPane().add(LogSenha, gridBagConstraints);
+        getContentPane().add(LogSenha);
+        LogSenha.setBounds(130, 130, 59, 33);
 
-        LogImg1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/computer-icon.png"))); // NOI18N
-        LogImg1.setText("jLabel3");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridheight = 6;
-        gridBagConstraints.ipadx = -42;
-        gridBagConstraints.ipady = -22;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(70, 0, 0, 0);
-        getContentPane().add(LogImg1, gridBagConstraints);
+        LogImg1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/computer-icon.png"))); // NOI18N
+        getContentPane().add(LogImg1);
+        LogImg1.setBounds(0, 40, 130, 140);
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(0, 0, 0, 0);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/test.jpg"))); // NOI18N
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        getContentPane().add(jLabel2, gridBagConstraints);
-
-        LogImg2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cinza-3143.jpg"))); // NOI18N
+        LogImg2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cinza-3143.jpg"))); // NOI18N
         LogImg2.setText("jLabel5");
 
         org.jdesktop.beansbinding.Binding binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, this, org.jdesktop.beansbinding.ObjectProperty.create(), LogImg2, org.jdesktop.beansbinding.BeanProperty.create("background"));
         bindingGroup.addBinding(binding);
 
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridwidth = 26;
-        gridBagConstraints.gridheight = 8;
-        gridBagConstraints.ipadx = -642;
-        gridBagConstraints.ipady = -549;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        getContentPane().add(LogImg2, gridBagConstraints);
+        getContentPane().add(LogImg2);
+        LogImg2.setBounds(0, 0, 420, 270);
 
         bindingGroup.bind();
 
