@@ -40,6 +40,7 @@ public class Login extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         LogEntrar.setFont(new java.awt.Font("Segoe Print", 1, 14)); // NOI18N
+        LogEntrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Botoes_Site_5745_Knob_Valid_Green.png"))); // NOI18N
         LogEntrar.setText("Entrar");
         LogEntrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -47,9 +48,10 @@ public class Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(LogEntrar);
-        LogEntrar.setBounds(160, 180, 82, 34);
+        LogEntrar.setBounds(130, 180, 120, 34);
 
         LogCancelar.setFont(new java.awt.Font("Segoe Print", 1, 14)); // NOI18N
+        LogCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Botoes_Site_5750_Knob_Cancel.png"))); // NOI18N
         LogCancelar.setText("Cancelar");
         LogCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -57,7 +59,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(LogCancelar);
-        LogCancelar.setBounds(240, 180, 96, 34);
+        LogCancelar.setBounds(260, 180, 130, 34);
 
         LogCampLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -65,7 +67,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(LogCampLogin);
-        LogCampLogin.setBounds(210, 110, 130, 20);
+        LogCampLogin.setBounds(200, 110, 130, 20);
         getContentPane().add(LogCampPass);
         LogCampPass.setBounds(200, 140, 130, 20);
 
@@ -81,7 +83,7 @@ public class Login extends javax.swing.JFrame {
 
         LogImg1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/computer-icon.png"))); // NOI18N
         getContentPane().add(LogImg1);
-        LogImg1.setBounds(0, 40, 130, 140);
+        LogImg1.setBounds(0, 60, 130, 140);
         getContentPane().add(jLabel2);
         jLabel2.setBounds(0, 0, 0, 0);
 
