@@ -1,3 +1,6 @@
+
+import javax.swing.JFrame;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -29,33 +32,28 @@ public class Principal extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jMenuBar2 = new javax.swing.JMenuBar();
         jMenu3 = new javax.swing.JMenu();
-        jMenu5 = new javax.swing.JMenu();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
         jMenu1 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
+        jMenu6 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jLabel1.setText("jLabel1");
 
         jMenuBar2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Botoes_5041_users_two_48.png"))); // NOI18N
-        jMenu3.setToolTipText("Cadastro");
-
-        jMenu5.setText("jMenu5");
-
-        jMenuItem3.setText("jMenuItem3");
-        jMenu5.add(jMenuItem3);
-
-        jMenu3.add(jMenu5);
-
-        jMenuItem2.setText("jMenuItem2");
-        jMenu3.add(jMenuItem2);
-
+        jMenu3.setToolTipText("Cadastro Usuários");
+        jMenu3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jMenu3MousePressed(evt);
+            }
+        });
         jMenuBar2.add(jMenu3);
+
+        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Barcode-icon.png"))); // NOI18N
+        jMenu2.setToolTipText("Cadastro Equipamentos");
+        jMenuBar2.add(jMenu2);
         jMenuBar2.add(jMenu1);
 
         jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Botoes_5034_search_48.png"))); // NOI18N
@@ -65,6 +63,10 @@ public class Principal extends javax.swing.JFrame {
         jMenu4.add(jMenuItem1);
 
         jMenuBar2.add(jMenu4);
+
+        jMenu6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Help-icon.png"))); // NOI18N
+        jMenu6.setToolTipText("Sobre");
+        jMenuBar2.add(jMenu6);
 
         setJMenuBar(jMenuBar2);
 
@@ -81,6 +83,10 @@ public class Principal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jMenu3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu3MousePressed
+
+    }//GEN-LAST:event_jMenu3MousePressed
 
     /**
      * @param args the command line arguments
@@ -120,12 +126,11 @@ public class Principal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenu jMenu5;
+    private javax.swing.JMenu jMenu6;
     private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
     // End of variables declaration//GEN-END:variables
 }
