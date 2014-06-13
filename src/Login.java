@@ -22,90 +22,74 @@ public class Login extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-        bindingGroup = new org.jdesktop.beansbinding.BindingGroup();
 
-        LogEntrar = new javax.swing.JToggleButton();
-        LogCancelar = new javax.swing.JToggleButton();
-        LogCampLogin = new javax.swing.JTextField();
-        LogCampPass = new javax.swing.JPasswordField();
-        LogLogin = new javax.swing.JLabel();
-        LogSenha = new javax.swing.JLabel();
-        LogImg1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        LogImg2 = new javax.swing.JLabel();
+        JBentrar = new javax.swing.JToggleButton();
+        JBcancelar = new javax.swing.JToggleButton();
+        JTlogin = new javax.swing.JTextField();
+        JPpassword = new javax.swing.JPasswordField();
+        JLlogin = new javax.swing.JLabel();
+        JLsenha = new javax.swing.JLabel();
+        JLpcimg = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         getContentPane().setLayout(null);
 
-        LogEntrar.setFont(new java.awt.Font("Segoe Print", 1, 14)); // NOI18N
-        LogEntrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Botoes_Site_5745_Knob_Valid_Green.png"))); // NOI18N
-        LogEntrar.setText("Entrar");
-        LogEntrar.addActionListener(new java.awt.event.ActionListener() {
+        JBentrar.setFont(new java.awt.Font("Segoe Print", 1, 14)); // NOI18N
+        JBentrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Botoes_Site_5745_Knob_Valid_Green.png"))); // NOI18N
+        JBentrar.setText("Entrar");
+        JBentrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                LogEntrarActionPerformed(evt);
+                JBentrarActionPerformed(evt);
             }
         });
-        getContentPane().add(LogEntrar);
-        LogEntrar.setBounds(130, 180, 120, 34);
+        getContentPane().add(JBentrar);
+        JBentrar.setBounds(130, 180, 120, 34);
 
-        LogCancelar.setFont(new java.awt.Font("Segoe Print", 1, 14)); // NOI18N
-        LogCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Botoes_Site_5750_Knob_Cancel.png"))); // NOI18N
-        LogCancelar.setText("Cancelar");
-        LogCancelar.addActionListener(new java.awt.event.ActionListener() {
+        JBcancelar.setFont(new java.awt.Font("Segoe Print", 1, 14)); // NOI18N
+        JBcancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Botoes_Site_5750_Knob_Cancel.png"))); // NOI18N
+        JBcancelar.setText("Cancelar");
+        JBcancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                LogCancelarActionPerformed(evt);
+                JBcancelarActionPerformed(evt);
             }
         });
-        getContentPane().add(LogCancelar);
-        LogCancelar.setBounds(260, 180, 130, 34);
+        getContentPane().add(JBcancelar);
+        JBcancelar.setBounds(260, 180, 130, 34);
 
-        LogCampLogin.addActionListener(new java.awt.event.ActionListener() {
+        JTlogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                LogCampLoginActionPerformed(evt);
+                JTloginActionPerformed(evt);
             }
         });
-        getContentPane().add(LogCampLogin);
-        LogCampLogin.setBounds(200, 110, 130, 20);
-        getContentPane().add(LogCampPass);
-        LogCampPass.setBounds(200, 140, 130, 20);
+        getContentPane().add(JTlogin);
+        JTlogin.setBounds(200, 110, 130, 20);
+        getContentPane().add(JPpassword);
+        JPpassword.setBounds(200, 140, 130, 20);
 
-        LogLogin.setFont(new java.awt.Font("Segoe Print", 1, 18)); // NOI18N
-        LogLogin.setText("Login:");
-        getContentPane().add(LogLogin);
-        LogLogin.setBounds(140, 100, 53, 33);
+        JLlogin.setFont(new java.awt.Font("Segoe Print", 1, 18)); // NOI18N
+        JLlogin.setText("Login:");
+        getContentPane().add(JLlogin);
+        JLlogin.setBounds(140, 100, 53, 33);
 
-        LogSenha.setFont(new java.awt.Font("Segoe Print", 1, 18)); // NOI18N
-        LogSenha.setText("Senha:");
-        getContentPane().add(LogSenha);
-        LogSenha.setBounds(130, 130, 59, 33);
+        JLsenha.setFont(new java.awt.Font("Segoe Print", 1, 18)); // NOI18N
+        JLsenha.setText("Senha:");
+        getContentPane().add(JLsenha);
+        JLsenha.setBounds(130, 130, 59, 33);
 
-        LogImg1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/computer-icon.png"))); // NOI18N
-        getContentPane().add(LogImg1);
-        LogImg1.setBounds(0, 60, 130, 140);
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, 0, 0, 0);
-
-        LogImg2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cinza-3143.jpg"))); // NOI18N
-        LogImg2.setText("jLabel5");
-
-        org.jdesktop.beansbinding.Binding binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, this, org.jdesktop.beansbinding.ObjectProperty.create(), LogImg2, org.jdesktop.beansbinding.BeanProperty.create("background"));
-        bindingGroup.addBinding(binding);
-
-        getContentPane().add(LogImg2);
-        LogImg2.setBounds(0, 0, 420, 270);
-
-        bindingGroup.bind();
+        JLpcimg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/computer-icon.png"))); // NOI18N
+        getContentPane().add(JLpcimg);
+        JLpcimg.setBounds(0, 60, 130, 140);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void LogCampLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogCampLoginActionPerformed
+    private void JTloginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JTloginActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_LogCampLoginActionPerformed
+    }//GEN-LAST:event_JTloginActionPerformed
 
-    private void LogEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogEntrarActionPerformed
+    private void JBentrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBentrarActionPerformed
         try{ //tratamento de erros
 
         Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");//Driver JDBC – Fonte de Dados ODBC
@@ -116,9 +100,9 @@ public class Login extends javax.swing.JFrame {
 
         Statement stmt = con.createStatement();       //objeto comdo sql
 
-        int cadMat=Integer.parseInt( LogCampLogin.getText() );
+        int cadMat=Integer.parseInt( JTlogin.getText() );
 
-        String cadNome = LogCampLogin.getText();      //obtém nome digitado
+        String cadNome = JTlogin.getText();      //obtém nome digitado
 
         stmt.executeUpdate("insert into TabFicha (Matricula,Nome) values ('" + cadMat + "','" + cadNome +  "')" );
 
@@ -135,11 +119,11 @@ public class Login extends javax.swing.JFrame {
              JOptionPane.showMessageDialog( this, " Driver não encontrado " );
 
 }
-    }//GEN-LAST:event_LogEntrarActionPerformed
+    }//GEN-LAST:event_JBentrarActionPerformed
 
-    private void LogCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogCancelarActionPerformed
+    private void JBcancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBcancelarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_LogCancelarActionPerformed
+    }//GEN-LAST:event_JBcancelarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -177,15 +161,12 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField LogCampLogin;
-    private javax.swing.JPasswordField LogCampPass;
-    private javax.swing.JToggleButton LogCancelar;
-    private javax.swing.JToggleButton LogEntrar;
-    private javax.swing.JLabel LogImg1;
-    private javax.swing.JLabel LogImg2;
-    private javax.swing.JLabel LogLogin;
-    private javax.swing.JLabel LogSenha;
-    private javax.swing.JLabel jLabel2;
-    private org.jdesktop.beansbinding.BindingGroup bindingGroup;
+    private javax.swing.JToggleButton JBcancelar;
+    private javax.swing.JToggleButton JBentrar;
+    private javax.swing.JLabel JLlogin;
+    private javax.swing.JLabel JLpcimg;
+    private javax.swing.JLabel JLsenha;
+    private javax.swing.JPasswordField JPpassword;
+    private javax.swing.JTextField JTlogin;
     // End of variables declaration//GEN-END:variables
 }
